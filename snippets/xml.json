@@ -1,0 +1,33 @@
+{
+	"Suitelet XML": {
+		"prefix": "suitelet2_0",
+		"body": [
+			"<suitelet scriptid=\"${TM_FILENAME_BASE}\">",
+			"  <description></description>",
+			"  <isinactive>F</isinactive>",
+			"  <name>${1:TODO_Script Name}</name>",
+			"  <notifyadmins>F</notifyadmins>",
+			"  <notifyemails></notifyemails>",
+			"  <notifyowner>T</notifyowner>",
+			"  <notifyuser>F</notifyuser>",
+			"  <scriptfile>[/SuiteScripts/${2:TODO_scriptfilename.js}]</scriptfile>",
+			"  <scriptdeployments>",
+			"    <scriptdeployment scriptid=\"${TM_FILENAME_BASE/(customscript)/customdeploy/}\">",
+			"      <allemployees>F</allemployees>",
+			"      <allpartners>F</allpartners>",
+			"      <allroles>T</allroles>",
+			"      <audslctrole></audslctrole>",
+			"      <eventtype></eventtype>",
+			"      <isdeployed>T</isdeployed>",
+			"      <isonline>F</isonline>",
+			"      <loglevel>DEBUG</loglevel>",
+			"      <runasrole></runasrole>",
+			"      <status>RELEASED</status>",
+			"      <title>${3:TODO Script Deployment Title}</title>",
+			"    </scriptdeployment>",
+			"  </scriptdeployments>",
+			"</suitelet>"
+		],
+		"description": "NetSuite SuiteScript Type Suitelet XML"
+	}
+}
